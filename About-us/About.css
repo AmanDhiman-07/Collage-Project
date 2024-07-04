@@ -1,0 +1,842 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #0a0a0afb;
+}
+
+#main {
+    background-color: #0f0e0efb;
+}
+
+#page1 {
+    height: 75vh;
+    width: 100%;
+    background: url(/About-Assets/back1.jpg);
+    background-position: top;
+    background-size: cover;
+}
+
+/* nav Bar */
+#nav {
+    height: 5vw;
+    width: 100%;
+    /* background-color: #000; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #000;
+    padding: 4vw;
+    position: relative;
+}
+
+#nav-name svg {
+    color: rgb(255, 2, 200)
+}
+
+#nav-center {
+    background-color: #ffffff77;
+    height: 4vw;
+    font-size: 1vw;
+    border-radius: 5vw;
+    /* margin-top: 1vw; */
+}
+
+#nav-elem {
+    padding: 0.9vw;
+    margin-top: 0.3vw;
+}
+
+#nav-elem a {
+    text-decoration: none;
+    margin: 0.5vw;
+    color: #000;
+    font-weight: 500;
+    font-size: 1.2vw;
+    /* pointer-events: stroke; */
+}
+
+#nav-elem .neo {
+    background-color: #000;
+    border-radius: 5vw;
+    padding: 0.2vw 0.5vw;
+    color: rgb(255, 2, 200)
+}
+
+#nav-elem a:hover {
+    background-color: #8f82827a;
+    border-radius: 5vw;
+    padding: 0.1vw 0.5vw;
+    text-decoration: line-through;
+    transition: all 200ms ease;
+}
+
+#nav-logo svg {
+    color: rgb(255, 2, 200)
+}
+
+#about-elem {
+    padding: 2vw 5vw;
+    position: relative;
+    background-color: #00000088;
+    box-shadow: 1vw 0.9vw 100vw 8vw rgb(24, 23, 23);
+    width: 30%;
+    height: 30%;
+    top: 10%;
+}
+
+#about-elem h5 {
+    color: #fff;
+    font-weight: 400;
+    font-size: 0.8vw;
+}
+
+#about-elem h1 {
+    margin-top: 1vw;
+    font-weight: 400;
+    font-size: 4vw;
+    color: rgb(129, 22, 106)
+}
+
+#about-elem h1 span {
+    font-weight: 600;
+}
+
+/* page2 css :start */
+
+#page2 {
+    height: 100vh;
+    width: 100%;
+    background-color: #1b1717c5;
+    color: #fff;
+}
+
+#page2-con {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7vw 4vw;
+}
+
+#nav-item {
+    width: 30%;
+    height: 50vh;
+    /* background-color: #13ad4e; */
+}
+
+#nav-item h6 {
+    font-size: 0.7vw;
+    font-weight: 500;
+}
+
+#nav-item ul {
+    padding: 2vw 0vw;
+}
+
+#nav-item a {
+    color: #fff;
+    text-decoration: none;
+    margin-top: 0.9vw;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#nav-item a:hover {
+    border-bottom: #f00606 0.1px solid;
+    transition: all 1s ease-in-out;
+    ;
+}
+
+#nav-item a {
+    display: block;
+    cursor: pointer;
+}
+
+
+#page2-right {
+    width: 50%;
+    height: 50vh;
+}
+
+#life h1 {
+    font-weight: 100;
+    margin: 1vw 0vw;
+    font-size: 3.4vw;
+}
+
+#life p {
+    font-size: 0.9vw;
+}
+
+
+#vision {
+    margin-top: 4vw;
+}
+
+#vision h1 {
+    font-weight: 100;
+    font-size: 3.4vw;
+    margin: 2vw 0vw;
+}
+
+#vision p {
+    font-size: 0.9vw;
+}
+
+/* page3 css :start */
+
+#page3 {
+    height: 100vh;
+    width: 100%;
+    /* background-color: red; */
+    position: relative;
+    /* margin-left: 2%; */
+}
+
+#page3 h1 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 13vw;
+    font-weight: 300;
+    border-bottom: 2px solid rgb(95, 92, 92);
+    color: #fff;
+}
+
+#swiperdiv {
+    height: 75vh;
+    width: 100%;
+    /* background-color: rgb(238, 202, 196); */
+    background-image: url('/About-Assets/back1.jpg');
+    background-size: 100% 100%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    animation: changeimg 10s linear infinite;
+    position: relative;
+    bottom: 5vw;
+    padding: 2vw 5vw;
+}
+
+@keyframes changeimg {
+    0% {
+        background-image: url('/About-Assets/1.jpg');
+    }
+
+    25% {
+        background-image: url('/About-Assets/2.jpg');
+    }
+
+    50% {
+        background-image: url('/About-Assets/3.jpg');
+    }
+
+    75% {
+        background-image: url('/About-Assets/4.jpg');
+    }
+
+    100% {
+        background-image: url('/About-Assets/5.jpg');
+    }
+}
+
+
+
+
+
+/* page 4 css start */
+#page4 {
+    min-height: 130vh;
+    width: 100%;
+    color: #fff;
+    /* background-color: burlywood; */
+}
+
+.intro__content {
+    padding: 5vw;
+}
+
+.pretitle {
+    font-size: 0.8vw;
+    margin: 1vw 0vw;
+    text-transform: uppercase;
+}
+
+.title {
+    font-size: 2.5vw;
+    font-weight: 100;
+    margin: 1vw 0vw;
+}
+
+.description {
+    font-size: 1vw;
+    font-weight: 300;
+}
+
+#page4_img {
+    height: 40vw;
+    width: 100%;
+}
+
+#element {
+    height: 100vh;
+    width: 100%;
+    border-radius: 2vw;
+    padding: 0vw 3vw;
+    display: flex;
+    gap: 4vw;
+}
+
+#element #first_elem {
+    position: relative;
+}
+
+
+#first_elem {
+    height: 60vh;
+    width: 30%;
+    border-radius: 1vw;
+}
+
+#element #first_elem img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    /* border-radius: 1vw; */
+}
+
+
+#element #first_elem video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#element #first_elem:hover img {
+    opacity: 0;
+    transition: all 0.5s ease-in;
+}
+
+#first_elem #add-elem h1 {
+    font-size: 1.5vw;
+    margin-top: 1vw;
+}
+
+#first_elem #add-elem p {
+    font-size: 0.9vw;
+    margin-top: 0.5vw;
+
+}
+
+#second_elem {
+    height: 60vh;
+    width: 30%;
+    border-radius: 1vw;
+    object-fit: cover;
+}
+
+#element #second_elem {
+    position: relative;
+}
+
+
+#element #second_elem img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    /* border-radius: 1vw; */
+}
+
+#element #second_elem video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#element #second_elem:hover img {
+    opacity: 0;
+    transition: all 0.5s ease-in;
+}
+
+#second_elem #add-elem2 h1 {
+    font-size: 1.5vw;
+    margin-top: 1vw;
+}
+
+#second_elem #add-elem2 p {
+    font-size: 0.9vw;
+    margin-top: 0.5vw;
+}
+
+#third_elem {
+    background-color: #ebe3e3;
+    height: 60vh;
+    width: 30%;
+    border-radius: 1vw;
+}
+
+#element #third_elem {
+    position: relative;
+}
+
+#element #third_elem img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    /* border-radius: 1vw; */
+}
+
+#element #third_elem video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    /* border-radius: 20vw; */
+}
+
+#element #third_elem:hover img {
+    opacity: 0;
+    transition: all 0.5s ease-in;
+}
+
+#third_elem #add-elem3 h1 {
+    font-size: 1.5vw;
+    margin-top: 1vw;
+}
+
+#third_elem #add-elem3 p {
+    font-size: 0.9vw;
+    margin-top: 0.5vw;
+}
+
+#page5 {
+    min-height: 100vh;
+    width: 100%;
+    /* background-color: saddlebrown; */
+    color: #fff;
+}
+
+#page5 #future {
+    /* background-color: #e41616; */
+    min-height: 100vh;
+    width: 70%;
+    position: relative;
+    left: 30%;
+    padding: 3vw 5vw;
+}
+
+#page5 #future h1 {
+    margin-bottom: 3vw;
+}
+
+#page5 #future #para1 p {
+    font-size: 0.9vw;
+    font-weight: 200;
+}
+
+#page5 #future #para1 img {
+    margin-top: 2vw;
+    height: 30vw;
+    width: 100%;
+}
+
+#page5 #future #para1:hover img {
+    scale: 0.9;
+    transition: all 0.7s ease;
+    border-radius: 10vw 20vw 9vw;
+}
+
+#page6 {
+    min-height: 100vh;
+    width: 100%;
+    /* background-color: salmon; */
+    color: #fff;
+}
+
+#page6 #future2 {
+    /* background-color: #e41616; */
+    min-height: 100vh;
+    width: 70%;
+    position: relative;
+    left: 30%;
+    padding: 2vw 5vw;
+}
+
+
+#page6 #future2 #susta2 h5 {
+    font-size: 2vw;
+    margin-bottom: 2vw;
+}
+
+#page6 #future2 #susta2 p {
+    font-size: 0.9vw;
+    font-weight: 200;
+}
+
+#page6 #future2 #susta2 img {
+    margin-top: 2vw;
+    width: 100%;
+    height: 30vw;
+}
+
+#page6 #future2 #susta2:hover img {
+    scale: 0.9;
+    transition: all 0.7s ease;
+    border-radius: 50vw 10vw 50vw 10vw;
+}
+
+
+#page6 #future3 {
+    /* background-color: #e41616; */
+    /* height: 100vh; */
+    width: 70%;
+    position: relative;
+    left: 30%;
+    padding: 0vw 5vw;
+}
+
+#page6 #future3 #susta3 h5 {
+    font-size: 2vw;
+    margin-bottom: 1vw;
+}
+
+#page6 #future3 #susta3 p {
+    font-size: 0.9vw;
+    font-weight: 200;
+}
+
+/* page 7 is started */
+
+#page7 {
+    /* background-color: #000; */
+    height: 90vh;
+    width: 100%;
+}
+
+#page7 #box1 {
+    display: flex;
+    padding: 5vw 4vw;
+
+}
+
+#page7 #page7-left {
+    /* background-color: violet; */
+    height: 70vh;
+    width: 40%;
+    color: #fff;
+}
+
+#page7 #page7-left #inno {
+    padding: 8vw 1vw;
+}
+
+#page7 #page7-left #inno h6 {
+    font-size: 0.7vw;
+    font-weight: 500;
+}
+
+#page7 #page7-left #inno h1 {
+    font-size: 2vw;
+    font-weight: 400;
+}
+
+#page7 #page7-left #inno p {
+    font-size: 1vw;
+    width: 25vw;
+}
+
+#page7 #page7-right {
+    /* background-color: rgb(219, 216, 14); */
+    height: 70vh;
+    width: 70%;
+}
+
+#page7 #page7-right img {
+    height: 100%;
+    width: 100%;
+}
+
+#page7 #page7-right img:hover {
+    scale: 0.9;
+    transition: all 0.7s ease;
+    border-radius: 50vw 2vw 20vw 10vw;
+}
+
+/* page8 is start */
+
+#page8 {
+    /* background-color: slateblue; */
+    min-height: 100vh;
+    width: 100%;
+}
+
+#page8 #box2 {
+    display: flex;
+    padding: 2vw 3vw;
+}
+
+#page8 #box2 #page8-left {
+    /* background-color: turquoise; */
+    width: 65%;
+    height: 80vh;
+}
+
+#page8 #box2 #page8-left img {
+    width: 100%;
+    height: 80vh;
+}
+
+#page8 #box2 #page8-right {
+    width: 40%;
+    height: 70vh;
+    /* background-color: red; */
+    color: #fff;
+}
+
+#page8 #box2 #page8-right #save {
+    padding: 7vw 5vw;
+}
+
+#page8 #box2 #page8-right #save h6 {
+    font-size: 0.7vw;
+    font-weight: 500;
+}
+
+#page8 #box2 #page8-right #save h1 {
+    font-weight: 500;
+}
+
+#page8 #box2 #page8-right #save p {
+    font-size: 0.9vw;
+    width: 90%;
+}
+
+/* page9 is start */
+
+#page9 {
+    /* background-color: #f10c0c; */
+    height: 100vh;
+    width: 100%;
+}
+
+#page9 #box3 {
+    display: flex;
+    padding: 1vw 4vw;
+    /* background-color: red; */
+
+
+}
+
+#page9 #page9-left {
+    /* background-color: violet; */
+    height: 100vh;
+    width: 40%;
+    color: #fff;
+}
+
+#page9 #page9-left #lead {
+    padding: 8vw 1vw;
+}
+
+#page9 #page9-left #lead h6 {
+    font-size: 0.7vw;
+    font-weight: 500;
+}
+
+#page9 #page9-left #lead h1 {
+    font-size: 2vw;
+    font-weight: 400;
+}
+
+#page9 #page9-left #lead p {
+    font-size: 1vw;
+    width: 25vw;
+}
+
+#page9 #page9-right {
+    /* background-color: rgb(219, 216, 14); */
+    height: 70vh;
+    width: 70%;
+}
+
+#page9 #page9-right img {
+    height: 100%;
+    width: 100%;
+    border: none;
+}
+
+#page9 #page9-right img:hover {
+    scale: 1.1;
+    transition: all 0.7s ease;
+    border-radius: 50vw 20vw 30vw 20vw;
+}
+
+/* page10 is start */
+
+#page10 {
+    /* background-color: #f10a0a; */
+    height: 90vh;
+    width: 100%;
+    color: #fff;
+}
+
+#page10 #box4 {
+    display: flex;
+    padding: 5vw 8vw;
+    /* background-color: sandybrown; */
+
+}
+
+#page10 #page10-left #wall {
+    width: 70%;
+}
+
+#page10 #page10-left #wall h6 {
+    font-size: 0.7vw;
+    font-weight: 500;
+}
+
+#page10 #page10-left #wall h1 {
+    font-weight: 400;
+}
+
+#page10 #page10-left #wall p {
+    font-size: 0.9vw;
+}
+
+/* footer part is start */
+
+#footer {
+    /* background-color: #e60d0d; */
+    height: 70vh;
+    width: 100%;
+    color: #fff;
+}
+
+#footer #footer-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw 3vw;
+}
+
+#footer-inner {
+    border-bottom: #8a8787 solid 0.1vw;
+    margin: 0vw 3vw;
+}
+
+#footer #footer-inner #hadding h1 {
+    font-size: 1.8vw;
+    font-weight: 500;
+}
+
+#footer #footer-inner #icons {
+    color: #fff;
+    margin: 2vw;
+}
+
+#footer #footer-inner #ico i {
+    margin: 1vw;
+    font-size: 2.5vw;
+}
+
+#footer #footer-inner #ico i:hover {
+    color: rgb(252, 1, 239);
+    transition: all 0.5s linear;
+}
+
+#sub {
+    height: 50vh;
+    width: 100%;
+}
+
+#sub #sub-elem {
+    display: flex;
+    justify-content: space-between;
+}
+
+#sub #sub-elem #elem-1 {
+    height: 50vh;
+    width: 50%;
+    padding: 3vw 4vw;
+    display: flex;
+}
+
+#sub #sub-elem #elem-1 #info h5 {
+    font-weight: 400;
+}
+
+#sub #sub-elem #elem-1 #info p {
+    font-size: 0.9vw;
+    font-weight: 400;
+    margin: 0.5vw 0vw;
+}
+
+#elem-1 #info p:hover {
+    border-bottom: #36f806 1px solid;
+    transition: all 0.5s linear;
+
+}
+
+#sub #sub-elem #elem-1 #info-2 {
+    padding: 0vw 5vw;
+}
+
+#sub #sub-elem #elem-1 #info-2 p {
+    font-size: 0.9vw;
+    font-weight: 400;
+    margin: 0.5vw 0vw;
+}
+
+#elem-1 #info-2 p:hover {
+    border-bottom: #2bfa01 1px solid;
+    transition: all 0.5s linear;
+}
+
+#sub #sub-elem #elem-2 {
+    height: 50%;
+    width: 40%;
+    padding: 2vw 3vw;
+}
+
+#sub #sub-elem #elem-2 h1 {
+    font-size: 1.5vw;
+}
+
+#sub #sub-elem #elem-2 #Subscribe button {
+    height: 6vh;
+    width: 15vw;
+    padding: 1vw;
+    text-align: center;
+    background-color: transparent;
+    border: 0.2px solid rgb(183, 0, 255);
+    color: #fff;
+}
+
+#sub #sub-elem #elem-2 #svg {
+    margin: 2vw 0vw;
+}
+
+#sub #sub-elem #elem-2 #svg #fo-photo {
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+}
+
+#footer svg {
+    color: #2bfa01;
+    margin: 1vw 4vw;
+    position: relative;
+    bottom: 3vw;
+}

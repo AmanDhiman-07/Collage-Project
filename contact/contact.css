@@ -1,0 +1,523 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* color: #fff; */
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#page1 {
+    height: 100vh;
+    width: 100%;
+    /* background-color: #070707; */
+}
+
+#page1 video {
+    position: absolute;
+    height: 120vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+#overlay_video {
+    height: 120vh;
+    width: 100%;
+    background-color: #000000;
+    position: absolute;
+    opacity: 65%;
+}
+
+/* nav Bar */
+#nav {
+    height: 4vw;
+    width: 100%;
+    /* background-color: #000; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #000;
+    padding: 4vw 4vw;
+    position: relative;
+}
+
+#nav-name svg {
+    color: rgb(194, 16, 230);
+}
+
+#nav-center {
+    background-color: #9794946b;
+    height: 4vw;
+    font-size: 1vw;
+    border-radius: 5vw;
+    /* margin-top: 1vw; */
+}
+
+#nav-elem {
+    padding: 0.9vw;
+    margin-top: 0.3vw;
+}
+
+#nav-elem a {
+    text-decoration: none;
+    margin: 0.5vw;
+    color: #000;
+    font-weight: 500;
+    font-size: 1.2vw;
+    /* pointer-events: stroke; */
+}
+
+#nav-elem .neo {
+    background-color: #000;
+    border-radius: 5vw;
+    padding: 0.4vw 0.7vw;
+    color: rgb(228, 8, 236);
+
+}
+
+#nav-elem a:hover {
+    background-color: #97959596;
+    border-radius: 5vw;
+    padding: 0.1vw 0.5vw;
+    text-decoration: line-through;
+    transition: all 200ms ease;
+}
+
+#nav-logo svg {
+    color: rgb(228, 8, 236);
+}
+
+#page1 #hero {
+    min-height: 100vh;
+    width: 100%;
+    /* background-color: red; */
+    position: absolute;
+    padding: 2vw 3vw;
+    color: #fff;
+}
+
+#left {
+    height: 60vh;
+    width: 40%;
+    /* background-color: rgb(51, 255, 0); */
+    position: absolute;
+}
+
+#left {
+    border-bottom: 0.1vw solid #494747;
+}
+
+#left h1 {
+    font-size: 4vw;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#left #phone_no {
+    /* background-color: rgb(247, 0, 255); */
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4vw 3vw;
+}
+
+#left #phone_no h6 {
+    font-weight: 700;
+    font-size: 0.7vw;
+}
+
+#left #phone_no h5 {
+    margin: 0.5vw 0vw;
+    font-size: 0.9vw;
+}
+
+#left #time {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 3vw;
+}
+
+#left #time h6 {
+    font-weight: 700;
+    font-size: 0.7vw;
+}
+
+#left #time h5 {
+    margin: 0.5vw 0vw;
+    font-size: 0.9vw;
+
+}
+
+#left #social {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vw 3vw;
+}
+
+#left #email h6 {
+    font-weight: 700;
+    font-size: 0.7vw;
+}
+
+#left #email h5 {
+    margin: 0.5vw 0vw;
+    font-size: 0.9vw;
+}
+
+#left #social_icon h6 {
+    font-weight: 700;
+    font-size: 0.7vw;
+    margin-bottom: 0.8vw;
+}
+
+#left #social_icon #icons i {
+    font-size: 1.7vw;
+    margin: 0.5vw 0vw;
+    margin: 0vw 0.5vw;
+}
+
+#left #social_icon #icons i:hover {
+    color: rgb(145, 51, 168);
+    transition: all 0.5s ease;
+}
+
+#left #button {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2vw 0vw;
+}
+
+#left #button #left-btn button {
+    padding: 1vw;
+    height: 6vh;
+    width: 13vw;
+    background-color: #928c8c;
+    border: none;
+}
+
+#left #button #left-btn button a {
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+#left #button #left-btn button:hover {
+    background-color: transparent;
+    transition: all 0.2s ease-in;
+}
+
+#left #button #right-btn button {
+    padding: 1vw;
+    height: 6vh;
+    width: 20vw;
+    background-color: transparent;
+    border: 0.5px solid #928c8c;
+}
+
+#left #button #right-btn button:hover {
+    background-color: rgb(145, 73, 160);
+    transition: all 0.2s ease-in;
+}
+
+#left #button #right-btn button a {
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+/* right position */
+
+#right {
+    height: 60vh;
+    width: 50%;
+    /* background-color: rgb(59, 102, 102); */
+    position: relative;
+    left: 50%;
+    top: 20%;
+    /* opacity: 0; */
+}
+
+#hading {
+    height: 10vh;
+    width: 100%;
+    /* background-color: red; */
+    padding: 1vw 2vw;
+}
+
+#hading a {
+    color: #fff;
+    padding: 0vw 3vw;
+}
+
+#right #hading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#right p {
+    /* background-color: rgb(112, 112, 59); */
+    padding: 0vw 2vw;
+    font-size: 0.9vw;
+    font-weight: 600;
+}
+
+#right #video {
+    height: 35vh;
+    width: 90%;
+}
+
+#right #video video {
+    height: 35vh;
+    width: 90%;
+    padding: 0vw 0vw;
+    border-radius: 1vw;
+}
+
+#right h3 {
+    text-align: left;
+    text-transform: uppercase;
+}
+
+#book_sec {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw 3vw;
+    border-bottom: 0.1vw solid #494747;
+    width: 90%;
+    /* background-color: red; */
+    margin-left: 4vw;
+}
+
+#book_sec #elem h4 {
+    font-size: 0.8vw;
+    font-weight: 500;
+}
+
+#book_sec #icons a {
+    padding: 0vw 3vw;
+    color: #fff;
+}
+
+#book_sec #icons a i {
+    font-size: 0.9vw;
+    padding: 1vw 3vw;
+}
+
+#fill_info {
+    height: 40vh;
+    width: 50%;
+    /* background-color: rgb(116, 73, 17); */
+    position: relative;
+    top: 62%;
+    padding: 1vw 2vw;
+}
+
+#fill_info form {
+    /* background-color: aqua; */
+    height: 40vh;
+    width: 90%;
+    padding: 2vw 4vw;
+    margin: 0vw 2vw;
+    color: #fff;
+}
+
+#fill_info form #elem_1 h5 {
+    font-size: 0.8vw;
+    font-weight: 800;
+}
+
+#fill_info form #elem_1 p {
+    font-size: 1vw;
+    font-weight: 600;
+}
+
+#fill_info form #elem_1 h2 {
+    font-weight: 500;
+    font-size: 2.2vw;
+}
+
+#fill_info form #btn_1 input {
+    border: none;
+    padding: 1vw 0vw;
+    height: 2vw;
+    width: 40vw;
+    background-color: transparent;
+    color: aliceblue;
+    border-bottom: 0.1vw solid #999797;
+    outline: none;
+}
+
+#fill_info form #btn_1 button {
+    margin: 1vw 0vw;
+    padding: 0.2vw 1vw;
+    border-color: transparent;
+    background-color: transparent;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1vw;
+}
+
+::placeholder {
+    color: #fff;
+}
+
+#fill_info form #btn_1 a {
+    font-size: 0.9vw;
+    color: #fff;
+}
+
+/* #page2 is :start */
+
+#page2 {
+    height: 120vh;
+    width: 100%;
+    background-color: #0a0a0a;
+    color: #fff;
+}
+
+#cards {
+    height: 100vh;
+    width: 100%;
+    /* background-color: red; */
+    padding: 0vw 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 6vw;
+}
+
+#cards #card-1 {
+    /* background-color: yellow; */
+    height: 70vh;
+    width: 32%;
+}
+
+#page2 #cards #card-1 #image img {
+    height: 70vh;
+    width: 100%;
+    object-fit: cover;
+    background-position: center;
+}
+
+#page2 #cards #card-1 #image img:hover {
+    scale: 0.9;
+    transition: all 0.5s ease;
+}
+
+#page2 #cards #card-1 #info_1 h1 {
+    font-size: 1.5vw;
+    font-weight: 400;
+}
+
+#page2 #cards #card-1 #info_1 p {
+    font-size: 0.9vw;
+}
+
+
+
+#cards #card-2 {
+    /* background-color: rgb(0, 255, 13); */
+    height: 70vh;
+    width: 32%;
+}
+
+
+#page2 #cards #card-2 #image img {
+    height: 70vh;
+    width: 100%;
+    object-fit: cover;
+    background-position: center;
+}
+
+#page2 #cards #card-2 #image img:hover {
+    scale: 0.9;
+    transition: all 0.5s ease;
+}
+
+#page2 #cards #card-2 #info_2 h1 {
+    font-size: 1.5vw;
+    font-weight: 400;
+}
+
+#page2 #cards #card-2 #info_2 p {
+    font-size: 0.9vw;
+    /* background-color: red; */
+}
+
+
+
+#cards #card-3 {
+    /* background-color: rgb(0, 17, 255); */
+    height: 70vh;
+    width: 32%;
+}
+
+#cards #card-3 {
+    /* background-color: rgb(0, 255, 13); */
+    height: 70vh;
+    width: 32%;
+}
+
+
+#page2 #cards #card-3 #image img {
+    height: 70vh;
+    width: 100%;
+    object-fit: cover;
+    background-position: center;
+}
+
+#page2 #cards #card-3 #image img:hover {
+    scale: 0.9;
+    transition: all 0.5s ease;
+}
+
+#page2 #cards #card-3 #info_2 h1 {
+    font-size: 1.5vw;
+    font-weight: 400;
+}
+
+#page2 #cards #card-3 #info_2 p {
+    font-size: 0.9vw;
+    /* background-color: red; */
+}
+
+#page2 #footer {
+    background-color: black;
+    height: 15vh;
+    width: 100%;
+    padding: 2vw 6vw;
+    margin-top: 3vw;
+}
+
+#page2 #footer #footer_items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#page2 #footer #footer_items h2 {
+    font-size: 1.7vw;
+    font-weight: 600;
+}
+
+#page2 #footer #footer_items i {
+    color: #fff;
+    padding: 1vw;
+    /* background-color: red; */
+    font-size: 2vw;
+}
